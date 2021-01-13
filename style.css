@@ -1,5 +1,6 @@
 body{
     overflow: hidden;
+    font-family: 'Vesper Libre', serif;
 }
 
 html{
@@ -21,6 +22,8 @@ html{
     height: 70%;
     background: white;
     border: 1px solid grey;
+    max-height: 600px;
+    min-height: 500px;
 }
 
 .navigationBar{
@@ -76,6 +79,7 @@ html{
     grid-area: 2 / 4 / 4 / 6;
     padding: 5%;
     margin-left: 2%;
+    font-family: 'Roboto', sans-serif;
 }
 
 .introduction{
@@ -110,6 +114,7 @@ html{
     grid-area: 2 / 2 / 4 / 4;
     padding: 5%;
     margin-right: 2%;
+    font-family: 'Roboto', sans-serif;
 }
 
 .mainClass{
