@@ -24,17 +24,37 @@ html{
     border: 1px solid grey;
     max-height: 600px;
     min-height: 500px;
+    opacity: 0.9;
+    padding: 2%;
+}
+
+.rugby{
+    height: 30em;
+    width: 25em;
+    position: absolute;
+    z-index: -5;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    opacity: 0.5;
+    max-height: 500px;
+    max-width: 500px;
 }
 
 .navigationBar{
     display:grid;
     grid-template: repeat(1, 1fr) / repeat(6,1fr);
-    background:white;
+    background: white;
+    border-bottom: 1px solid grey;
 }
 .navTitle{
     display:inline;
     grid-area: 1 / 1 / 1 / 4;
     margin-left: 5%;
+}
+
+.plexButtons, .buttons{
+    margin-left: 4%;
 }
 
 .navTerminal{
@@ -74,13 +94,14 @@ html{
     display: inline-flex; 
     flex-direction: column;
     flex-wrap: nowrap;
-    background: #dbb4b3;
     border: 1px solid black;
-    grid-area: 2 / 4 / 4 / 6;
+    grid-area: 2 / 3 / 4 / 5;
     padding: 5%;
-    margin-left: 2%;
     font-family: 'Roboto', sans-serif;
+    opacity: 1;
+    border-radius: 10%;
 }
+
 
 .introduction{
     grid-area: 1 / 1 / 7 / 7;
@@ -101,8 +122,12 @@ html{
 .plexTitle{
   
 }
-.plexButtons{
-    margin-top: 17px; 
+.plexButtons, .buttons{
+    margin-top: 12px; 
+}
+
+.buttonDetails{
+    text-decoration: none;
 }
 
 .torrentServer{
@@ -111,12 +136,19 @@ html{
     flex-wrap: nowrap;
     background: #928686;
     border: 1px solid black;
-    grid-area: 2 / 2 / 4 / 4;
+    grid-area: 2 / 1 / 4 / 3;
     padding: 5%;
     margin-right: 2%;
     font-family: 'Roboto', sans-serif;
+    opacity: 1;
+    border-radius: 10%;
 }
 
 .mainClass{
     grid-template: repeat(6, 1fr) / repeat(6,1fr);
 }
+
+.plexServer, .torrentServer {
+    background: white;
+}
+
