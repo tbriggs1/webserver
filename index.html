@@ -5,22 +5,44 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <script async defer src="https://teams.microsoft.com/share/launcher.js"></script>
-        <nav class="navigationBar">
-            <h1 class="navTitle">Web Server</h1>
-            <div class="navItems">
-            <h1 class="navTerminal">Terminal</h1>
-            <h1 class="navContact">Contact</h1>
-            </div>
-        </nav>
-        <main>
-            <div class="Introduction">
-                <h2>Tom Briggs Web Server</h2>
-                <p>Welcome to my webserver, you'll find all the information you need here below</p>
-            </div>
-            <div class="plexServer">
-
-            </div>
-        </main>
+        <div class="mainCard">
+            <nav class="navigationBar">
+                <h1 class="navTitle">Web Server</h1>
+                <div class="navItems">
+                    <a href="https://www.google.com" class="navTerminal">Terminal</a>
+                    <a href="www.google.com" class="navContact">Contact</a>
+                </div>
+            </nav>
+            <main class="mainClass">
+                <div class="introduction">
+                    <h2 class="introTitle">Welcome to the Server</h2>
+                    <p class="introDesc">Here you will find links that will redirect you to sites where you can download, manage, and play your media.</p>
+                </div>
+                <div class="plexServer">
+                    <div class="logo-title">
+                        <img src="pngwing.com.png" height="53px" width="70px">
+                        <h3 class="plexTitle"> Plex Server </h3>
+                    </div>
+                    <p class="plexText"> <strong>Details:</strong><br>Click on the enter server button and log into the server. Here you can manage
+                    media that is in the plex server. For a further guide click the button below </p>
+                    <div class="plexButtons">
+                        <button>Further Details</button>
+                        <button>Enter the server</button>
+                    </div>
+                </div>
+                <div class="torrentServer">
+                    <div class="torrent-logo-title">
+                        <img src="qbit.png" height="50px" width="50px">
+                        <h3 class="torrentTitle"> Torrent Server </h3>
+                    </div>
+                    <p class="torrentText"> <strong>Details:</strong><br>Click on the enter server button and log into the server. Here you can copy your torrentlink
+                    and download files straight onto plex. For a further guide click the button below </p>
+                    <div class="buttons">
+                        <button>Further Details</button>
+                        <button>Enter the server</button>
+                    </div>
+                </div>
+            </main>
+        </div>
     </body>
 </html>

@@ -1,9 +1,26 @@
 body{
-    background: #d6d6d3;
+    overflow: hidden;
+}
+
+html{
+    background: url(flower.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.mainCard{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     max-width: 900px;
     width: 100%;
-    border: 2px solid red;
-    margin:auto;
+    height: 70%;
+    background: white;
+    border: 1px solid grey;
 }
 
 .navigationBar{
@@ -12,13 +29,89 @@ body{
     background:white;
 }
 .navTitle{
-
+    display:inline;
+    grid-area: 1 / 1 / 1 / 4;
+    margin-left: 5%;
 }
 
 .navTerminal{
-
+    display: inline;
+    margin-right: 4%;
+    text-decoration: none;
+    color: black;
 }
 
 .navContact{
-    
+    display:inline;
+    text-decoration: none;
+    color: black;
+}
+
+.navItems{
+    display:inline-block;
+    grid-area: 1 / 5 / 1 / 7;
+    align-self: center;
+    margin-left: 40%;
+}
+
+.mainClass{
+    display: grid;
+}
+
+
+.introTitle{
+   text-align: center;
+}
+
+.introDesc{
+    text-align: center;
+}
+
+.plexServer{
+    display: inline-flex; 
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background: #dbb4b3;
+    border: 1px solid black;
+    grid-area: 2 / 4 / 4 / 6;
+    padding: 5%;
+    margin-left: 2%;
+}
+
+.introduction{
+    grid-area: 1 / 1 / 7 / 7;
+}
+
+.logo-title{
+  display: flex;
+}
+
+.torrent-logo-title{
+    display: flex;
+}
+  
+.plexServer img {
+   
+}
+
+.plexTitle{
+  
+}
+.plexButtons{
+    margin-top: 17px; 
+}
+
+.torrentServer{
+    display: inline-flex; 
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background: #928686;
+    border: 1px solid black;
+    grid-area: 2 / 2 / 4 / 4;
+    padding: 5%;
+    margin-right: 2%;
+}
+
+.mainClass{
+    grid-template: repeat(6, 1fr) / repeat(6,1fr);
 }
