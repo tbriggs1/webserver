@@ -153,3 +153,11 @@ html{
     background: white;
 }
 
+.popuptext{
+    z-index: 6;
+    display: inline;
+    border: 1px solid red;
+    height: 50px;
+    position: absolute;
+    visibility: hidden;
+}
