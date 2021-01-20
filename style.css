@@ -71,16 +71,11 @@ html{
 }
 
 .navTerminal:hover{
-    display: inline;
-    margin-right: 4%;
-    text-decoration: none;
-    color: black;
+    color: grey;
 }
 
 .navContact:hover{
-    display:inline;
-    text-decoration: none;
-    color: black;
+    color: grey;
 }
 
 .navItems{
