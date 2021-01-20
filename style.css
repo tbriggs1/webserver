@@ -70,6 +70,19 @@ html{
     color: black;
 }
 
+.navTerminal:hover{
+    display: inline;
+    margin-right: 4%;
+    text-decoration: none;
+    color: black;
+}
+
+.navContact:hover{
+    display:inline;
+    text-decoration: none;
+    color: black;
+}
+
 .navItems{
     display:inline-block;
     grid-area: 1 / 5 / 1 / 7;
@@ -115,13 +128,6 @@ html{
     display: flex;
 }
   
-.plexServer img {
-   
-}
-
-.plexTitle{
-  
-}
 .plexButtons, .buttons{
     margin-top: 12px; 
 }
