@@ -12,3 +12,7 @@ torrentButton.addEventListener('click', displayPopUp);
 torrentCloseButton.addEventListener('click', function(){
     torrentPopup.style.visibility = "hidden";
 })
+
+$(function(){
+    
+})
