@@ -14,5 +14,5 @@ torrentCloseButton.addEventListener('click', function(){
 })
 
 $(function(){
-    
+
 })
