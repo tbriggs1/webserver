@@ -180,3 +180,30 @@ html{
     top: 0;
     right:0;
 }
+
+.plexpopuptext{
+    z-index: 6;
+    display: inline;
+    height: 47%;
+    width: 30%;
+    position: absolute;
+    visibility: hidden;
+    border: 1px solid grey;
+    background: #ddc9c9; 
+    border: 1px solid black;
+    font-family: 'Roboto', sans-serif;
+    opacity: 1;
+   
+}
+
+.plexpopuptext p {
+    padding-top: 5px;
+    margin: 20px;
+}
+
+#plexCloseButton{
+    position: absolute;
+    display: inline;
+    top: 0;
+    right:0;
+}
