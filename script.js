@@ -14,5 +14,15 @@ torrentCloseButton.addEventListener('click', function(){
 })
 
 $(function(){
+<<<<<<< HEAD
 
 })
+=======
+    var $buttonClick = $('#plexButton').click(function(){
+        $('.plexpopuptext').css('visibility', 'visible');
+    })
+    var $buttonClose = $('#plexCloseButton').click(function(){
+        $('.plexpopuptext').css('visibility','hidden');
+    })
+})
+>>>>>>> 48e33804a68fc0470742c28fe3d559d2c8bf7469
