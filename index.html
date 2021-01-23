@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Web Server</title>
+        <script src="jquery-3.5.1.js"></script>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,500&display=swap" rel="stylesheet">
@@ -31,7 +32,9 @@
                     <p class="plexText"> <strong>Details:</strong><br>Click on the enter server button and log into the server. Here you can manage
                     media that is in the plex server. For a further guide click the button below </p>
                     <div class="plexButtons">
-                        <button class="buttonDetails">Further Details</button>
+                        <button class="buttonDetails" id="plexButton">Further Details</button>
+                        <span class="plexpopuptext" id="myplexPopup"><button id="plexCloseButton">X</button><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam hic cumque dolor laudantium, 
+                            eligendi deserunt inventore sunt odit, beatae minus officia tempore, deleniti ex quos! Alias praesentium consequatur repellendus aliquid.</p></span>
                         <a href="http://135.125.27.100:32400/" target="_blank"><button class="buttonDetails">Enter the server</button></a>
                     </div>
                 </div>
