@@ -68,6 +68,13 @@ html{
     display:inline;
     text-decoration: none;
     color: black;
+    margin-right: 4%;
+}
+
+.navWishlist{
+    display:inline;
+    text-decoration: none;
+    color: black;
 }
 
 .navTerminal:hover{
@@ -80,7 +87,7 @@ html{
 
 .navItems{
     display:inline-block;
-    grid-area: 1 / 5 / 1 / 7;
+    grid-area: 1 / 4 / 1 / 7;
     align-self: center;
     margin-left: 40%;
 }
