@@ -85,6 +85,10 @@ html{
     color: grey;
 }
 
+.navWishlist:hover{
+    color: grey;
+}
+
 .navItems{
     display:inline-block;
     grid-area: 1 / 4 / 1 / 7;
@@ -213,4 +217,11 @@ html{
     display: inline;
     top: 0;
     right:0;
+}
+
+#dogStream{
+    width: 800px;
+    margin-left: center;
+    margin-right: center;
+    height: 500px;
 }
