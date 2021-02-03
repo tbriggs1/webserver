@@ -159,9 +159,9 @@ html{
 }
 
 #closeCam{
-    position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 55px;
+    height: 58px;
+    font-size: 30px;
 }
 
 /* #closeCam{
