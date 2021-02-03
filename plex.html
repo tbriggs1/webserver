@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Server</title>
+        <script src="jquery-3.5.1.js"></script>
+        <link rel="stylesheet" href="plex.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;500&family=Roboto:ital,wght@0,100;1,500&family=Vesper+Libre:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="mainCard">
+            <img src="sever.jpg" class="rugby">
+            <nav class="navigationBar">
+                <h1 class="navTitle">Web Server</h1>
+                <div class="navItems">
+                    <a href="index.html" class="navContact">Home</a>
+                    <a href="dogcam.html" class="navWishlist">Dog</a>
+                    <a href="https://176.31.225.134/ui/#/login" target="_blank" class="navTerminal">Terminal</a>
+                </div>
+            </nav>
+            <main class="mainClass">
+                <div class="introduction">
+                    <h2 class="introTitle">Welcome to the Server</h2>
+                    <p class="introDesc">Here you will find links that will redirect you to sites where you can download, manage, and play your media.</p>
+                </div>
+                <div class="plexServer">
+                    <div class="logo-title">
+                        <img src="pngwing.com.png" height="53px" width="70px">
+                        <h3 class="plexTitle"> Plex Server </h3>
+                    </div>
+                    <p class="plexText"> <strong>Details:</strong><br>Click on the enter server button and log into the server. Here you can manage
+                    media that is in the plex server. For a further guide click the button below </p>
+                    <div class="plexButtons">
+                        <button class="buttonDetails" id="plexButton">Further Details</button>
+                        <span class="plexpopuptext" id="myplexPopup"><button id="plexCloseButton">X</button><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam hic cumque dolor laudantium, 
+                            eligendi deserunt inventore sunt odit, beatae minus officia tempore, deleniti ex quos! Alias praesentium consequatur repellendus aliquid.</p></span>
+                        <a href="http://135.125.27.100:32400/" target="_blank"><button class="buttonDetails">Enter the server</button></a>
+                    </div>
+                </div>
+                <div class="torrentServer">
+                    <div class="torrent-logo-title">
+                        <img src="qbit.png" height="50px" width="50px">
+                        <h3 class="torrentTitle"> Torrent Server </h3>
+                    </div>
+                    <p class="torrentText"> <strong>Details:</strong><br>Click on the enter server button and log into the server. Here you can copy your torrentlink
+                    and download files straight onto plex. For a further guide click the button below </p>
+                    <div class="buttons">
+                        <button class="buttonDetails" id="torrentButton">Further Details</button>
+                        <span class="popuptext" id="myPopup"><button id="torrentCloseButton">X</button><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam hic cumque dolor laudantium, 
+                            eligendi deserunt inventore sunt odit, beatae minus officia tempore, deleniti ex quos! Alias praesentium consequatur repellendus aliquid.</p></span>
+                        <a href="http://135.125.27.100:8080/" target="_blank"><button class="buttonDetails">Enter the server</button></a>
+                    </div>
+                </div>
+            </main>
+            <img src="sever.jpg" class="rugby">
+        </div>
+        <script src="script.js"></script>
+        <script src="jquery-3.5.1.js"></script>
+    </body>
+</html>

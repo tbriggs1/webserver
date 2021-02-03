@@ -1,7 +1,14 @@
+:root{
+    --main-text-color: #d64212;
+    --main-bg-color: #131925;
+}
+
 body{
     overflow: hidden;
-    font-family: 'Vesper Libre', serif;
+    font-family: 'Yusei Magic', serif;
+    color: var(--main-text-color)
 }
+
 
 html{
     background: url(flower.jpg) no-repeat center center fixed; 
@@ -20,11 +27,11 @@ html{
     max-width: 900px;
     width: 100%;
     height: 70%;
-    background: white;
+    background: var(--main-bg-color);
     border: 1px solid grey;
     max-height: 600px;
     min-height: 500px;
-    opacity: 0.9;
+    opacity: 0.95;
     padding: 2%;
 }
 
@@ -44,7 +51,6 @@ html{
 .navigationBar{
     display:grid;
     grid-template: repeat(1, 1fr) / repeat(6,1fr);
-    background: white;
     border-bottom: 1px solid grey;
 }
 .navTitle{
@@ -61,33 +67,33 @@ html{
     display: inline;
     margin-right: 4%;
     text-decoration: none;
-    color: black;
+    color: #f74912;
 }
 
 .navContact{
     display:inline;
     text-decoration: none;
-    color: black;
+    color: #f74912;
     margin-right: 4%;
 }
 
 .navWishlist{
     display:inline;
     text-decoration: none;
-    color: black;
+    color: #f74912;
     margin-right: 4%;
 }
 
 .navTerminal:hover{
-    color: grey;
+    color:  #a72902;
 }
 
 .navContact:hover{
-    color: grey;
+    color:  #a72902;
 }
 
 .navWishlist:hover{
-    color: grey;
+    color: #a72902;
 }
 
 .navItems{
@@ -124,7 +130,9 @@ html{
 
 
 .introduction{
-    grid-area: 1 / 1 / 7 / 7;
+    grid-area: 2 / 1 / 4 / 4;
+    text-align: center;
+    margin-top: 10%;
 }
 
 .logo-title{
