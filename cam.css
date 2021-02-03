@@ -179,3 +179,7 @@ html{
     border: 0px solid var(--main-text-color);
     border-radius: 50px;
 }
+
+#meelaTitle{
+    animation: 3s ease-in 1s infinite reverse both running slidein;
+}
