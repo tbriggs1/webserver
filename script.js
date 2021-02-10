@@ -19,7 +19,7 @@ burgerMenu.addEventListener('click', function(){
         burgerIcons[0].classList.add('changeB1');
         burgerIcons[1].classList.add('changeB2');
         burgerIcons[2].classList.add('changeB3');
-        $('.introTitle').css('margin-top', '20%');
+        $('.introTitle').css('margin-top', '30%');
     } else {
         burgerContent.style.display = 'none';
         burgerIcons[0].classList.remove('changeB1');

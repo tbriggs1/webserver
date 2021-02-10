@@ -2,16 +2,6 @@
     --main-bg-color: #251413;
     --main-text-color: #d64212;
 }
-body{
-    overflow: hidden;
-    font-family: 'Yusei Magic', serif;
-}
-
-
-
-
-
-@media (min-width: 1100px){
     body{
         overflow: hidden;
         font-family: 'Yusei Magic', serif;
@@ -233,4 +223,3 @@ body{
         top: 0;
         right:0;
     }
-}
