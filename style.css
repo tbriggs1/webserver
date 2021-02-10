@@ -14,7 +14,7 @@
         font-size: 26px;
         width: 100%;
         margin:0;
-        background: #1f1f26;
+        background: green;
     }
 
 
@@ -147,7 +147,6 @@
         flex: 1 0 auto;
         flex-direction: row;
         justify-content: space-evenly;
-        display: -webkit-flexbox; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
         align-items: center;
         flex-wrap: wrap;
         border-radius: 0 0 0 40%;
@@ -182,7 +181,6 @@
         flex: 1 0 auto;
         flex-direction: row;
         justify-content: center;
-        flex-wrap: wrap;
         align-items: center;
         display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
         display: -ms-flexbox;  /* TWEENER - IE 10 */
