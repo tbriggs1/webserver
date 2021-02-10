@@ -2,228 +2,346 @@
     --main-text-color: #d64212;
     --main-bg-color: #131925;
 }
+@media (max-width: 1099px){
 
-body{
-    overflow: hidden;
-    font-family: 'Yusei Magic', serif;
-    color: var(--main-text-color)
+    /* Hidden */
+    .rugby{
+        display:none;
+    }
+
+    body{
+        overflow: hidden;
+        font-family: 'Yusei Magic', serif;
+        font-size: 26px;
+        width: 100%;
+        overflow: hidden;
+        margin:0;
+    }
+
+
+    .navigationBar{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+        background: #121416;
+        opacity: 0.8;
+        padding-left: 20px;
+    }
+
+    .navTitle{
+        display: inline;
+        color: #a70202;
+        margin-left: 2%;
+        font-size: 40px;
+    }
+
+    #navItems{
+        display:none;
+        margin-top: 30%;
+        font-size: 40px;
+        position:absolute;
+        left:0;
+        background: #121416;
+        width: 100%;
+        padding-right: 20px;
+        padding-bottom: 3%;
+    }
+
+    .burgerItems{
+        margin-top: 2%;
+    }
+
+    #navItems a {
+        text-decoration: none;
+        color: #b30b0b;
+        display:block !important;
+        margin-left: 5%;
+        padding-bottom: 1%;
+        border-bottom: 1px solid white;
+        width: 13%;
+    }
+
+    #burgerIcon {
+        display: inline-block;
+        cursor: pointer;
+    }
+    #firstBurger, #secondBurger, #thirdBurger{
+        width: 50px;
+        height: 8px;
+        background: #e7e6e6;
+        margin: 6px 0;
+        transition: 0.4;
+    }
+
+        /* Rotate first bar */
+    .changeB1 {
+        -webkit-transform: rotate(-45deg) translate(-12px, 8px) ;
+        transform: rotate(-45deg) translate(-12px, 10px);
+        width: 35px;
+        height: 8px;
+        background: #333;
+        margin: 6px 0;
+        transition: 0.4;
+    }
+    
+    /* Fade out the second bar */
+    .changeB2{
+    opacity: 0;
+    }
+    
+    /* Rotate last bar */
+    .changeB3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+        transform: rotate(45deg) translate(-8px, -8px) ;
+        width: 35px;
+        height: 8px;
+        background: #333;
+        margin: 6px 0;
+        transition: 0.4;
+    }
+
+    .introTitle{
+        margin-top: 1%;
+    }
+
+    .mainClass{
+        padding: 5%;
+        text-align: center;
+    }
 }
+@media (min-width: 1100px){
+
+    /* Things hidden */
+
+    #burgerIcon{
+        display:none;
+    }
+
+    body{
+        overflow: hidden;
+        font-family: 'Yusei Magic', serif;
+        color: var(--main-text-color)
+    }
 
 
-html{
-    background: url(flower.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-.mainCard{
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    max-width: 900px;
-    width: 100%;
-    height: 70%;
-    background: var(--main-bg-color);
-    border: 1px solid grey;
-    max-height: 600px;
-    min-height: 500px;
-    opacity: 0.95;
-    padding: 2%;
-}
+    html{
+        background: url(flower.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .mainCard{
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        max-width: 900px;
+        width: 100%;
+        height: 70%;
+        background: var(--main-bg-color);
+        border: 1px solid grey;
+        max-height: 600px;
+        min-height: 500px;
+        opacity: 0.95;
+        padding: 2%;
+    }
 
-.rugby{
-    height: 30em;
-    width: 25em;
-    position: absolute;
-    z-index: -5;
-    bottom: 0;
-    right: 0;
-    border-radius: 50%;
-    opacity: 0.5;
-    max-height: 500px;
-    max-width: 500px;
-}
+    .rugby{
+        height: 30em;
+        width: 25em;
+        position: absolute;
+        z-index: -5;
+        bottom: 0;
+        right: 0;
+        border-radius: 50%;
+        opacity: 0.5;
+        max-height: 500px;
+        max-width: 500px;
+    }
 
-.navigationBar{
-    display:grid;
-    grid-template: repeat(1, 1fr) / repeat(6,1fr);
-    border-bottom: 1px solid grey;
-}
-.navTitle{
-    display:inline;
-    grid-area: 1 / 1 / 1 / 4;
-    margin-left: 5%;
-}
+    .navigationBar{
+        display:grid;
+        grid-template: repeat(1, 1fr) / repeat(6,1fr);
+        border-bottom: 1px solid grey;
+    }
+    .navTitle{
+        display:inline;
+        grid-area: 1 / 1 / 1 / 4;
+        margin-left: 5%;
+    }
 
-.plexButtons, .buttons{
-    margin-left: 4%;
-}
+    .plexButtons, .buttons{
+        margin-left: 4%;
+    }
 
-.navTerminal{
-    display: inline;
-    margin-right: 4%;
-    text-decoration: none;
-    color: #f74912;
-}
+    .navTerminal{
+        display: inline;
+        margin-right: 4%;
+        text-decoration: none;
+        color: #f74912;
+    }
 
-.navContact{
-    display:inline;
-    text-decoration: none;
-    color: #f74912;
-    margin-right: 4%;
-}
+    .navContact{
+        display:inline;
+        text-decoration: none;
+        color: #f74912;
+        margin-right: 4%;
+    }
 
-.navWishlist{
-    display:inline;
-    text-decoration: none;
-    color: #f74912;
-    margin-right: 4%;
-}
+    .navWishlist{
+        display:inline;
+        text-decoration: none;
+        color: #f74912;
+        margin-right: 4%;
+    }
 
-.navTerminal:hover{
-    color:  #a72902;
-}
+    .navTerminal:hover{
+        color:  #a72902;
+    }
 
-.navContact:hover{
-    color:  #a72902;
-}
+    .navContact:hover{
+        color:  #a72902;
+    }
 
-.navWishlist:hover{
-    color: #a72902;
-}
+    .navWishlist:hover{
+        color: #a72902;
+    }
 
-.navItems{
-    display:inline-block;
-    grid-area: 1 / 4 / 1 / 7;
-    align-self: center;
-    margin-left: 40%;
-}
+    .navItems{
+        display:inline-block;
+        grid-area: 1 / 4 / 1 / 7;
+        align-self: center;
+        margin-left: 40%;
+    }
 
-.mainClass{
-    display: grid;
-}
+    .mainClass{
+        display: grid;
+    }
 
 
-.introTitle{
-   text-align: center;
-}
-
-.introDesc{
+    .introTitle{
     text-align: center;
-}
+    }
 
-.plexServer{
-    display: inline-flex; 
-    flex-direction: column;
-    flex-wrap: nowrap;
-    border: 1px solid black;
-    grid-area: 2 / 3 / 4 / 5;
-    padding: 5%;
-    font-family: 'Roboto', sans-serif;
-    opacity: 1;
-    border-radius: 10%;
-}
+    .introDesc{
+        text-align: center;
+    }
+
+    .plexServer{
+        display: inline-flex; 
+        flex-direction: column;
+        flex-wrap: nowrap;
+        border: 1px solid black;
+        grid-area: 2 / 3 / 4 / 5;
+        padding: 5%;
+        font-family: 'Roboto', sans-serif;
+        opacity: 1;
+        border-radius: 10%;
+    }
 
 
-.introduction{
-    grid-area: 2 / 1 / 4 / 4;
-    text-align: center;
-    margin-top: 10%;
-}
+    .introduction{
+        grid-area: 2 / 1 / 4 / 4;
+        text-align: center;
+        margin-top: 10%;
+    }
 
-.logo-title{
-  display: flex;
-}
-
-.torrent-logo-title{
+    .logo-title{
     display: flex;
-}
-  
-.plexButtons, .buttons{
-    margin-top: 12px; 
-}
+    }
 
-.buttonDetails{
-    text-decoration: none;
-}
+    .torrent-logo-title{
+        display: flex;
+    }
+    
+    .plexButtons, .buttons{
+        margin-top: 12px; 
+    }
 
-.torrentServer{
-    display: inline-flex; 
-    flex-direction: column;
-    flex-wrap: nowrap;
-    background: #928686;
-    border: 1px solid black;
-    grid-area: 2 / 1 / 4 / 3;
-    padding: 5%;
-    margin-right: 2%;
-    font-family: 'Roboto', sans-serif;
-    opacity: 1;
-    border-radius: 10%;
-}
+    .buttonDetails{
+        text-decoration: none;
+    }
 
-.mainClass{
-    grid-template: repeat(6, 1fr) / repeat(6,1fr);
-}
+    .torrentServer{
+        display: inline-flex; 
+        flex-direction: column;
+        flex-wrap: nowrap;
+        background: #928686;
+        border: 1px solid black;
+        grid-area: 2 / 1 / 4 / 3;
+        padding: 5%;
+        margin-right: 2%;
+        font-family: 'Roboto', sans-serif;
+        opacity: 1;
+        border-radius: 10%;
+    }
 
-.plexServer, .torrentServer {
-    background: white;
-}
+    .mainClass{
+        grid-template: repeat(6, 1fr) / repeat(6,1fr);
+    }
 
-.popuptext{
-    z-index: 6;
-    display: inline;
-    height: 47%;
-    width: 30%;
-    position: absolute;
-    visibility: hidden;
-    border: 1px solid grey;
-    background: #ddc9c9; 
-    border: 1px solid black;
-    font-family: 'Roboto', sans-serif;
-    opacity: 1;
-    top: 45%;
-    right: 66%;
-}
+    .plexServer, .torrentServer {
+        background: white;
+    }
 
-.popuptext p {
-    padding-top: 5px;
-    margin: 20px;
-}
+    .popuptext{
+        z-index: 6;
+        display: inline;
+        height: 47%;
+        width: 30%;
+        position: absolute;
+        visibility: hidden;
+        border: 1px solid grey;
+        background: #ddc9c9; 
+        border: 1px solid black;
+        font-family: 'Roboto', sans-serif;
+        opacity: 1;
+        top: 45%;
+        right: 66%;
+    }
 
-#torrentCloseButton{
-    position: absolute;
-    display: inline;
-    top: 0;
-    right:0;
-}
+    .popuptext p {
+        padding-top: 5px;
+        margin: 20px;
+    }
 
-.plexpopuptext{
-    z-index: 6;
-    display: inline;
-    height: 47%;
-    width: 30%;
-    position: absolute;
-    visibility: hidden;
-    border: 1px solid grey;
-    background: #ddc9c9; 
-    border: 1px solid black;
-    font-family: 'Roboto', sans-serif;
-    opacity: 1;
-   
-}
+    #torrentCloseButton{
+        position: absolute;
+        display: inline;
+        top: 0;
+        right:0;
+    }
 
-.plexpopuptext p {
-    padding-top: 5px;
-    margin: 20px;
-}
+    .plexpopuptext{
+        z-index: 6;
+        display: inline;
+        height: 47%;
+        width: 30%;
+        position: absolute;
+        visibility: hidden;
+        border: 1px solid grey;
+        background: #ddc9c9; 
+        border: 1px solid black;
+        font-family: 'Roboto', sans-serif;
+        opacity: 1;
+    
+    }
 
-#plexCloseButton{
-    position: absolute;
-    display: inline;
-    top: 0;
-    right:0;
+    .plexpopuptext p {
+        padding-top: 5px;
+        margin: 20px;
+    }
+
+    #plexCloseButton{
+        position: absolute;
+        display: inline;
+        top: 0;
+        right:0;
+    }
 }
