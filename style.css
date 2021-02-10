@@ -198,20 +198,21 @@
     }
 
     @media not all and (min-resolution:.001dpcm) { @media {
+        #navButtons{
+           display:flex;
+        }
 
-        #siteNavigation{
-            display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-            background: #a70202;
-            padding-bottom: 4em;
-            margin-top: -0.1em;
-            z-index: 1;
-            justify-content: center;
-            flex-wrap: wrap;
-            border-radius: 0 0 0 40%;
-            -webkit-display: flex; 
-            -webkit-flex-direction: row; 
-            -webkit-align-items: flex-start;
-        } 
+        #dogCamButton{
+            margin-right: 30px;
+        }
+
+        #navIcons{
+            display:flex;
+        }
+
+        #youtubeLogo{
+            margin-right: 30px;
+        }
     }}
 
  
