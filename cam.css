@@ -2,198 +2,199 @@
     --main-text-color: #d64212;
     --main-bg-color: #132515;
 }
-
-body{
-    overflow: hidden;
-    font-family: 'Yusei Magic', serif;
-    color: var(--main-text-color);
-    overflow: hidden;
-}
-
-html{
-    background: url(flower.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-.mainCard{
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    max-width: 900px;
-    width: 100%;
-    height: 70%;
-    background:var(--main-bg-color);
-    border: 1px solid grey;
-    max-height: 600px;
-    min-height: 500px;
-    opacity: 0.95;
-    padding: 2%;
-    visibility: visible;
-}
-
-.rugby{
-    height: 30em;
-    width: 25em;
-    position: absolute;
-    z-index: -5;
-    bottom: 0;
-    right: 0;
-    border-radius: 50%;
-    opacity: 0.5;
-    max-height: 500px;
-    max-width: 500px;
-}
-
-.navigationBar{
-    display:grid;
-    grid-template: repeat(1, 1fr) / repeat(6,1fr);
-    border-bottom: 1px solid grey;
-}
-.navTitle{
-    display:inline;
-    grid-area: 1 / 1 / 1 / 4;
-    margin-left: 5%;
-}
-
-.plexButtons, .buttons{
-    margin-left: 4%;
-}
-
-.navTerminal{
-    display: inline;
-    margin-right: 4%;
-    text-decoration: none;
-    color: #f74912;
-}
-
-.navContact{
-    display:inline;
-    text-decoration: none;
-    color: #f74912;
-    margin-right: 4%;
-}
-
-.navWishlist{
-    display:inline;
-    text-decoration: none;
-    color: #f74912;
-    margin-right: 4%;
-}
-
-.navTerminal:hover{
-    color: #a72902;
-}
-
-.navContact:hover{
-    color: #a72902;
-}
-
-.navWishlist:hover{
-    color:#a72902;
-}
-
-.navItems{
-    display:inline-block;
-    grid-area: 1 / 4 / 1 / 7;
-    align-self: center;
-    margin-left: 40%;
-}
-
-.mainClass{
-    display: grid;
-}
-
-
-.introTitle{
-   text-align: center;
-}
-
-.introDesc{
-    text-align: center;
-}
-
-.plexServer{
-    display: inline-flex; 
-    flex-direction: column;
-    flex-wrap: nowrap;
-    border: 1px solid black;
-    grid-area: 2 / 3 / 4 / 5;
-    padding: 5%;
-    font-family: 'Roboto', sans-serif;
-    opacity: 1;
-    border-radius: 10%;
-}
-
-
-
-.introduction{
-    margin-top: 5%;
-    grid-area: 4 / 1 / 7 / 4;
-    text-align: center;
-    line-height: 1;
-}
-
-
-.mainClass{
-    grid-template: repeat(6, 1fr) / repeat(6,1fr);
-}
-
-
-
-#dogStream{
-    visibility: hidden;
-}
-
-#dogCam{
-    border:none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    max-height: 720px;
-    min-height: 500px;
-    max-width: 1280px;
-    min-width: 500px;
-    opacity: 1;
-}
-
-#closeCam{
-    width: 55px;
-    height: 58px;
-    font-size: 30px;
-}
-
-#meeButton{
-    height: 40px;
-    width: 150px;
-    background: var(--main-text-color);
-    color: white;
-    border: 0px solid var(--main-text-color);
-    border-radius: 50px;
-}
-
-
-@keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
+@media (min-width: 1100px){
+    body{
+        overflow: hidden;
+        font-family: 'Yusei Magic', serif;
+        color: var(--main-text-color);
+        overflow: hidden;
     }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
 
-#meelaTitle{
-    animation-duration: 3s;
-   animation-name: slidein;
- }
+    html{
+        background: url(flower.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .mainCard{
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        max-width: 900px;
+        width: 100%;
+        height: 70%;
+        background:var(--main-bg-color);
+        border: 1px solid grey;
+        max-height: 600px;
+        min-height: 500px;
+        opacity: 0.95;
+        padding: 2%;
+        visibility: visible;
+    }
+
+    .rugby{
+        height: 30em;
+        width: 25em;
+        position: absolute;
+        z-index: -5;
+        bottom: 0;
+        right: 0;
+        border-radius: 50%;
+        opacity: 0.5;
+        max-height: 500px;
+        max-width: 500px;
+    }
+
+    .navigationBar{
+        display:grid;
+        grid-template: repeat(1, 1fr) / repeat(6,1fr);
+        border-bottom: 1px solid grey;
+    }
+    .navTitle{
+        display:inline;
+        grid-area: 1 / 1 / 1 / 4;
+        margin-left: 5%;
+    }
+
+    .plexButtons, .buttons{
+        margin-left: 4%;
+    }
+
+    .navTerminal{
+        display: inline;
+        margin-right: 4%;
+        text-decoration: none;
+        color: #f74912;
+    }
+
+    .navContact{
+        display:inline;
+        text-decoration: none;
+        color: #f74912;
+        margin-right: 4%;
+    }
+
+    .navWishlist{
+        display:inline;
+        text-decoration: none;
+        color: #f74912;
+        margin-right: 4%;
+    }
+
+    .navTerminal:hover{
+        color: #a72902;
+    }
+
+    .navContact:hover{
+        color: #a72902;
+    }
+
+    .navWishlist:hover{
+        color:#a72902;
+    }
+
+    .navItems{
+        display:inline-block;
+        grid-area: 1 / 4 / 1 / 7;
+        align-self: center;
+        margin-left: 40%;
+    }
+
+    .mainClass{
+        display: grid;
+    }
+
+
+    .introTitle{
+    text-align: center;
+    }
+
+    .introDesc{
+        text-align: center;
+    }
+
+    .plexServer{
+        display: inline-flex; 
+        flex-direction: column;
+        flex-wrap: nowrap;
+        border: 1px solid black;
+        grid-area: 2 / 3 / 4 / 5;
+        padding: 5%;
+        font-family: 'Roboto', sans-serif;
+        opacity: 1;
+        border-radius: 10%;
+    }
+
+
+
+    .introduction{
+        margin-top: 5%;
+        grid-area: 4 / 1 / 7 / 4;
+        text-align: center;
+        line-height: 1;
+    }
+
+
+    .mainClass{
+        grid-template: repeat(6, 1fr) / repeat(6,1fr);
+    }
+
+
+
+    #dogStream{
+        visibility: hidden;
+    }
+
+    #dogCam{
+        border:none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        max-height: 720px;
+        min-height: 500px;
+        max-width: 1280px;
+        min-width: 500px;
+        opacity: 1;
+    }
+
+    #closeCam{
+        width: 55px;
+        height: 58px;
+        font-size: 30px;
+    }
+
+    #meeButton{
+        height: 40px;
+        width: 150px;
+        background: var(--main-text-color);
+        color: white;
+        border: 0px solid var(--main-text-color);
+        border-radius: 50px;
+    }
+
+
+    @keyframes slidein {
+        from {
+        margin-left: 100%;
+        width: 300%;
+        }
+    
+        to {
+        margin-left: 0%;
+        width: 100%;
+        }
+    }
+
+    #meelaTitle{
+        animation-duration: 3s;
+    animation-name: slidein;
+    }
+}
