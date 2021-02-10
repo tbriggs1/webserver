@@ -145,22 +145,22 @@
         z-index: 1;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         justify-content: space-evenly;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-end;
         border-radius: 0 0 0 40%;
     }
 
     #siteNavigation h2{
         color: white;
-        font-size: 60px;
+        font-size: 50px;
     }
 
     #navButtons button{
         margin-top: 3rem;
         height: 5em;
-        width: 12em;
-        font-size: 34px;
+        width: 11em;
+        font-size: 20px;
         font-family: 'Yusei Magic', serif;
         font-weight: bold;
         background: #1f1f26;
@@ -183,7 +183,7 @@
     }
 
     #socialNavigation h2 {
-        font-size: 60px;
+        font-size: 50px;
     }
 
 
