@@ -208,8 +208,13 @@
             justify-content: center;
             flex-wrap: wrap;
             border-radius: 0 0 0 40%;
+            -webkit-display: flex; 
+            -webkit-flex-direction: row; 
+            -webkit-align-items: flex-start;
         } 
     }}
+
+ 
 
 
 }
