@@ -36,7 +36,7 @@
 
     #navItems{
         display:none;
-        margin-top: 15em;
+        margin-top: 50%;
         border-top: 10px dotted white;
         font-size: 40px;
         position:absolute;
@@ -144,7 +144,6 @@
         margin-top: -0.1em;
         z-index: 1;
         display: flex;
-        display: -webkit-flex;
         justify-content: center;
         -webkit-justify-content: center;
         flex: 1;
@@ -154,6 +153,7 @@
         align-items: center;
         flex-wrap: wrap;
         border-radius: 0 0 0 40%;
+        display: -webkit-flexbox;
     }
 
     #siteNavigation h2{
@@ -161,8 +161,6 @@
         font-size: 50px;
         flex-basis: 100%;
         text-align: center;
-        flex: 0 1 100%;
-        -webkit-flex: 0 1 auto;
     }
 
     #navButtons button{
@@ -176,7 +174,6 @@
         color: white;
         border: none;
         border-radius: 55px;
-        display:inline;
     }
 
     #socialNavigation {
@@ -190,12 +187,9 @@
         justify-content: center;
         flex-wrap: wrap;
         align-items: center;
-        display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-        display: -ms-flexbox;  /* TWEENER - IE 10 */
-        display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-        display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
         position: relative;
         margin-top: 5%;
+        display: -webkit-flexbox;
     }
 
     #socialNavigation h2 {
