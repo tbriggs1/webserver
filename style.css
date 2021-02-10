@@ -200,7 +200,7 @@
     @media not all and (min-resolution:.001dpcm) { @media {
 
         #siteNavigation{
-            display: -webkit-flexbox; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+            display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
             background: #a70202;
             padding-bottom: 4em;
             margin-top: -0.1em;
