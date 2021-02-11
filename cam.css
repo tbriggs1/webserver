@@ -367,7 +367,7 @@
         color:#a72902;
     }
 
-    .navItems{
+    #navItems{
         display:inline-block;
         grid-area: 1 / 4 / 1 / 7;
         align-self: center;
