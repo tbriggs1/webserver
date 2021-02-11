@@ -27,6 +27,29 @@ burgerMenu.addEventListener('click', function(){
     }
 })
 
+
+$(function(){
+    var $buttonClick = $('#meeButton').click(function(){
+        $(window).scrollTop(0);
+        $('.mainCard').css('visibility', 'hidden');
+        $('#loading').css('display', 'flex');
+        $('.slideshow-container').css('visibility', 'hidden');
+        setTimeout(() => {$('#loadingText').append(" . ");}, 1000);
+        setTimeout(() => {$('#loadingText').append(" . ");}, 2000);
+        setTimeout(() => {$('#loadingText').append(" . ");}, 3000);
+        setTimeout(() => {$('#loadingText').text("Loading . . ")}, 4000);
+        setTimeout(() => {$('#loadingText').text("Loading . ")}, 5000);
+        setTimeout(() => {$('#loadingText').text("Loading ")}, 6000);
+        setTimeout(() => {$('#loading').css('display', 'none');}, 6500);
+        setTimeout(() => {$('#dogStream').css('visibility', 'visible');}, 6500);
+    })
+    var $buttonClose = $('#closeCam').click(function(){
+        $('#dogStream').css('visibility','hidden');
+        $('.mainCard').css('visibility', 'visible');
+        $('.slideshow-container').css('visibility', 'visible');
+        })
+})
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -54,26 +77,3 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
-
-
-
-$(function(){
-    var $buttonClick = $('#meeButton').click(function(){
-        $('.mainCard').css('visibility', 'hidden');
-        $('#loading').css('display', 'flex');
-        $('.slideshow-container').css('visibility', 'hidden');
-        setTimeout(() => {$('#loadingText').append(" . ");}, 1000);
-        setTimeout(() => {$('#loadingText').append(" . ");}, 2000);
-        setTimeout(() => {$('#loadingText').append(" . ");}, 3000);
-        setTimeout(() => {$('#loadingText').text("Loading . . ")}, 4000);
-        setTimeout(() => {$('#loadingText').text("Loading . ")}, 5000);
-        setTimeout(() => {$('#loadingText').text("Loading ")}, 6000);
-        setTimeout(() => {$('#loading').css('display', 'none');}, 6500);
-        setTimeout(() => {$('#dogStream').css('visibility', 'visible');}, 6500);
-    })
-    var $buttonClose = $('#closeCam').click(function(){
-        $('#dogStream').css('visibility','hidden');
-        $('.mainCard').css('visibility', 'visible');
-        $('.slideshow-container').css('visibility', 'visible');
-        })
-})
