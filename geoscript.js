@@ -1,3 +1,7 @@
+import Modernizr from 'modernizr.js'
+
+window.Modernizr;
+
 if (Modernizr.geolocation){
     navigator.geolocation.getCurrentPosition(success,fail);
     window.alert('You are at position ' + navigator.geolocation.getCurrentPosition(success,fail));
