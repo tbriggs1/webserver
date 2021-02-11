@@ -75,6 +75,5 @@ $(function(){
         $('#dogStream').css('visibility','hidden');
         $('.mainCard').css('visibility', 'visible');
         $('.slideshow-container').css('visibility', 'visible');
-        $('#closeCam').css('visibility', 'visible');
         })
 })
