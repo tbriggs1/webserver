@@ -123,6 +123,13 @@
         padding-bottom: 6em;
     
     }
+
+    .introduction h2, h4{
+        text-align: center;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
  
     #dogStream{
         visibility: hidden;
