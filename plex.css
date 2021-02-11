@@ -162,7 +162,7 @@
         background: #1f1f26;
         color: white;
         height: 400px; 
-    
+        padding-bottom: 25%;
     }
 
     .plexText, .torrentText{
