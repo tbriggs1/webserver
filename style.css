@@ -8,7 +8,6 @@
     .rugby{
         display:none;
     }
-
     body{
         font-family: 'Yusei Magic', serif;
         font-size: 26px;
@@ -32,6 +31,11 @@
         display: inline;
         color: #a70202;
         font-size: 60px;
+        text-decoration: none;
+        border: none;
+    }
+    .navigationBar a{
+        text-decoration: none;
     }
 
     #navItems{
@@ -243,6 +247,11 @@
         color: var(--main-text-color)
     }
 
+    .navigationBar a{
+        text-decoration: none;
+        color: var(--main-text-color);
+    }
+    
 
     html{
         background: url(flower.jpg) no-repeat center center fixed; 

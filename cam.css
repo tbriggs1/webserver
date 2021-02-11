@@ -35,6 +35,10 @@
         font-size: 60px;
     }
 
+    .navigationBar a{
+        text-decoration: none;
+    }
+    
     #navItems{
         display:none;
         margin-top: 50%;
@@ -319,6 +323,11 @@
         max-width: 500px;
     }
 
+    .navigationBar a{
+        text-decoration: none;
+        color: var(--main-text-color);
+    }
+    
     .navigationBar{
         display:grid;
         grid-template: repeat(1, 1fr) / repeat(6,1fr);

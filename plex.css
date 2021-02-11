@@ -16,7 +16,10 @@
         margin:0;
         background: #1f1f26;
     }
-
+    .navTitle a{
+        text-decoration: none;
+        color: #a70202;
+    }
 
     .navigationBar{
         display:flex;
@@ -33,6 +36,10 @@
         color: #a70202;
         font-size: 60px;
     }
+    .navigationBar a{
+        text-decoration: none;
+    }
+    
 
     #navItems{
         display:none;
@@ -258,7 +265,11 @@
         max-height: 500px;
         max-width: 500px;
     }
-
+    .navigationBar a{
+        text-decoration: none;
+        color: var(--main-text-color);
+    }
+    
     .navigationBar{
         display:grid;
         grid-template: repeat(1, 1fr) / repeat(6,1fr);
