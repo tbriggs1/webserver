@@ -11,19 +11,25 @@
         <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="mainCard">
-            <img src="sever.jpg" class="rugby">
+        <div class="mainCard">         
             <nav class="navigationBar">
                 <h1 class="navTitle">Web Server</h1>
-                <div class="navItems">
+                <div id='burgerItems' class='burgerItems'>
+                    <div id='burgerIcon'>
+                        <div id="firstBurger"  class="burgerButtons"></div>
+                        <div id="secondBurger" class="burgerButtons"></div>
+                        <div id="thirdBurger"  class="burgerButtons"></div>
+                    </div>
+                </div>
+                <div id="navItems">
                     <a href="index.html" class="navContact">Home</a>
                     <a href="dogcam.html" class="navWishlist">Dog</a>
-                    <a href="https://176.31.225.134/ui/#/login" target="_blank" class="navTerminal">Terminal</a>
+                    <a href="plex.html" class="navTerminal">Plex</a>
                 </div>
             </nav>
             <main class="mainClass">
                 <div class="introduction">
-                    <h2 class="introTitle">Welcome to the Server</h2>
+                    <h2 class="introTitle">Welcome to the Media Server</h2>
                     <p class="introDesc">Here you will find links that will redirect you to sites where you can download, manage, and play your media.</p>
                 </div>
                 <div class="plexServer">
@@ -37,7 +43,7 @@
                         <button class="buttonDetails" id="plexButton">Further Details</button>
                         <span class="plexpopuptext" id="myplexPopup"><button id="plexCloseButton">X</button><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam hic cumque dolor laudantium, 
                             eligendi deserunt inventore sunt odit, beatae minus officia tempore, deleniti ex quos! Alias praesentium consequatur repellendus aliquid.</p></span>
-                        <a href="http://135.125.27.100:32400/" target="_blank"><button class="buttonDetails">Enter the server</button></a>
+                        <a href="http://135.125.27.100:32400/" target="_blank"><button class="buttonDetails" id="plexyButton">Enter the server</button></a>
                     </div>
                 </div>
                 <div class="torrentServer">
@@ -51,7 +57,7 @@
                         <button class="buttonDetails" id="torrentButton">Further Details</button>
                         <span class="popuptext" id="myPopup"><button id="torrentCloseButton">X</button><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam hic cumque dolor laudantium, 
                             eligendi deserunt inventore sunt odit, beatae minus officia tempore, deleniti ex quos! Alias praesentium consequatur repellendus aliquid.</p></span>
-                        <a href="http://135.125.27.100:8080/" target="_blank"><button class="buttonDetails">Enter the server</button></a>
+                        <a href="http://135.125.27.100:8080/" target="_blank"><button class="buttonDetails" id="torrentyButton">Enter the server</button></a>
                     </div>
                 </div>
             </main>

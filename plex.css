@@ -2,6 +2,213 @@
     --main-bg-color: #251413;
     --main-text-color: #d64212;
 }
+@media (max-width: 1099px){
+
+    /* Hidden */
+    .rugby{
+        display:none;
+    }
+
+    body{
+        font-family: 'Yusei Magic', serif;
+        font-size: 26px;
+        width: 100%;
+        margin:0;
+        background: #1f1f26;
+    }
+
+
+    .navigationBar{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        background: #1f1f26;
+        padding-left: 20px;
+    }
+
+    .navTitle{
+        display: inline;
+        color: #a70202;
+        font-size: 60px;
+    }
+
+    #navItems{
+        display:none;
+        margin-top: 50%;
+        border-top: 10px dotted white;
+        font-size: 40px;
+        position:absolute;
+        left:0;
+        background: #1f1f26;
+        width: 100%;
+        padding-bottom: 3%;
+    }
+
+    .burgerItems{
+        margin-top: 2%;
+    }
+
+    #navItems a {
+        text-decoration: none;
+        color: #b30b0b;
+        display:block !important;
+        margin-left: 5%;
+        padding-bottom: 1%;
+        width: 13%;
+        padding-top: 2%;
+    }
+
+
+    #burgerIcon {
+        display: inline-block;
+        cursor: pointer;
+    }
+    #firstBurger, #secondBurger, #thirdBurger{
+        width: 50px;
+        height: 8px;
+        background: #e7e6e6;
+        margin: 6px 0;
+        transition: 0.4;
+    }
+
+        /* Rotate first bar */
+    .changeB1 {
+        -webkit-transform: rotate(-45deg) translate(-12px, 8px) ;
+        transform: rotate(-45deg) translate(-12px, 10px);
+        width: 35px;
+        height: 8px;
+        background: #333;
+        margin: 6px 0;
+        transition: 0.4;
+    }
+    
+    /* Fade out the second bar */
+    .changeB2{
+    opacity: 0;
+    }
+    
+    /* Rotate last bar */
+    .changeB3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+        transform: rotate(45deg) translate(-8px, -8px) ;
+        width: 35px;
+        height: 8px;
+        background: #333;
+        margin: 6px 0;
+        transition: 0.4;
+    }
+
+    .introTitle{
+        margin-top: 1%;
+    }
+
+    main{
+        padding-top: 20px;
+        background: #1f1f26;
+        text-align: center;
+    }
+
+    .introduction {
+        background: #a70202;
+        text-align: center;
+        width: 100%;
+        color:white;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -1em;
+        padding-top: 6em;
+        padding-bottom: 6em;
+    
+    }
+    .introTitle, .introDesc{
+        width: 77%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    #myplexPopup, #torrentButton, #plexButton, #myPopup{
+        display: none;
+    } 
+
+    .torrent-logo-title, .logo-title{
+        display:flex;
+        justify-content: center;
+    }
+
+    .torrent-logo-title img, .logo-title img {
+        margin-top: 3%;
+        margin-right: 2%;
+    }
+
+    .plexServer, .torrentServer {
+        display:flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2em;
+        padding-top: 3em;
+        padding-bottom: 3em;
+        background: #1f1f26;
+        color: white;
+    }
+
+    .plexText, .torrentText{
+        color: white;
+        width: 70%;
+        margin-left:auto;
+        margin-right: auto;
+    }
+
+    .torrentServer {
+        background: #a70202;
+    }
+
+    #torrentyButton, #plexyButton{
+        margin-top: 3rem;
+        height: 5em;
+        width: 11em;
+        font-size: 20px;
+        font-family: 'Yusei Magic', serif;
+        font-weight: bold;
+        background: #1f1f26;
+        color: white;
+        border: none;
+        border-radius: 55px;
+    }
+
+    #plexyButton{
+        background: #a70202 !important;
+    }
+    @media not all and (min-resolution:.001dpcm) { @media {
+        #navButtons{
+           display:flex;
+        }
+
+        #dogCamButton{
+            margin-right: 30px;
+        }
+
+        #navIcons{
+            display:flex;
+        }
+
+        #youtubeLogo{
+            margin-right: 30px;
+        }
+
+        #navItems {
+            margin-top: 30%;
+        }
+    }}
+
+}
+@media (min-width: 1100px) {
     body{
         overflow: hidden;
         font-family: 'Yusei Magic', serif;
@@ -94,7 +301,7 @@
         color: grey;
     }
 
-    .navItems{
+    #navItems{
         display:inline-block;
         grid-area: 1 / 4 / 1 / 7;
         align-self: center;
@@ -223,3 +430,4 @@
         top: 0;
         right:0;
     }
+}
