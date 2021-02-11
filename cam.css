@@ -257,6 +257,22 @@
 
 }
 @media (min-width: 1100px){
+    
+    #loading{
+        display: none;
+    }
+
+    #loadingText{
+        display: none;
+    }
+
+    #loadingBackground img{
+        display: none;
+    }
+
+    .slideshow-container {
+        display:none;
+    }
     body{
         overflow: hidden;
         font-family: 'Yusei Magic', serif;
