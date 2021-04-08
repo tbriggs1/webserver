@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/styles/globalstyle.css"],"names":[],"mappings":"AAAA,EACI,QAAQ,CACR,SAAS,CACT,qBACJ,CAEA,KACI,eACJ,CAEA,KACI,kBACJ","file":"main.b10d68d7.chunk.css","sourcesContent":["*{\r\n    margin:0;\r\n    padding:0;\r\n    box-sizing: border-box;\r\n}\r\n\r\nhtml {\r\n    font-size: 62.5%;\r\n}\r\n\r\nbody{\r\n    background: #E7EEFB;\r\n}"]}
