@@ -1,6 +1,6 @@
 $(function () {
     $.ajax({
-        url: 'http://127.0.0.1:8000/recommendations/recommended/1/getRecommendedBy/',
+        url: 'http://135.125.27.98:4000/recommendations/recommended/1/getRecommendedBy/',
         type: 'GET',
         jsonp: 'callback',
         dataType: 'jsonp',
