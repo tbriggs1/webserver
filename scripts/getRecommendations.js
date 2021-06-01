@@ -1,6 +1,6 @@
 $(function () {
     $.ajax({
-        url: 'https://a9eec9474185.ngrok.io/recommendations/recommended/1/getRecommendedBy',
+        url: 'https://ee12a4e9098e.ngrok.io/recommendations/recommended/1/getRecommendedBy',
         type: 'GET',
         jsonp: 'callback',
         dataType: 'jsonp',
