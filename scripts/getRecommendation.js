@@ -1,9 +1,9 @@
 $(function () {   
 
-    osapi.people.get().execute(function(data) {
-        console.log(data);
-        document.getElementById('osapi_name').innerHTML = data.name.givenName;
-    });
+    // osapi.people.get().execute(function(data) {
+    //     console.log(data);
+    //     document.getElementById('osapi_name').innerHTML = data.name.givenName;
+    // });
 
     
     $.ajax({
