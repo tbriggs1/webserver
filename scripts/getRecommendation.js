@@ -5,7 +5,7 @@ $(function () {
 
     
     $.ajax({
-        url: 'https://b713009c3705.ngrok.io/recommendations/recommended/1/getRecommendedBy',
+        url: 'https://bc5df54076e2.ngrok.io/recommendations/recommended/1/getRecommendedBy',
         type: 'GET',
         json: 'callback',
         contentType: 'application/json',
