@@ -1,4 +1,11 @@
 $(function () {   
+
+    osapi.people.get().execute(function(data) {
+        console.log(data);
+        document.getElementById('osapi_name').innerHTML = data.name.givenName;
+    });
+
+    
     $.ajax({
         url: 'https://b713009c3705.ngrok.io/recommendations/recommended/1/getRecommendedBy',
         type: 'GET',
@@ -18,7 +25,7 @@ $(function () {
         }
     });
     });
-
+    
 
     let albumAccordion = function (data) {
         data.forEach(function (item, index) {
