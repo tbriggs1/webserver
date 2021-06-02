@@ -1,9 +1,6 @@
 $(function () {   
 
-    osapi.people.get().execute(function(data) {
-        console.log(data);
-        document.getElementById('osapi_name').innerHTML = data.name.givenName;
-    });
+    document.getElementById('osapi_name').innerHTML= jamApp.currentUser.attributes.FirstName;
 
     
     $.ajax({
