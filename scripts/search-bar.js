@@ -17,7 +17,7 @@
     
     $("#searchButton").click(() => {
         input = document.getElementById("search-bar").value;
-        window.location = `https://jamsalesdemo2.sapjam.com/home/HdMS3x7G8gxWkQLJrHOijE?%24searchText=${input}`
+        window.location = `https://jamsalesdemo2.sapjam.com/home/HdMS3x7G8gxWkQLJrHOijE?%24searchText=${input}`;
     });
         
     (function getUserID() {
