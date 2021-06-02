@@ -1,5 +1,5 @@
 .popup {
-    width:  25vw;
+    min-width:  25vw;
     height: 100vh;
     display: none;
     background:white;
