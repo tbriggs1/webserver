@@ -28,7 +28,7 @@ $(function () {
     let albumAccordion = function (data) {
         data.forEach(function (item, index) {
         console.log(item, index);
-        if (item.STUD_ID == '451288'){
+        if (item.STUD_ID == 'sfadmin'){
             $('.accordion-body').append(
                 '<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">' +
                 '<div class="card" style="width: 18rem;">' +
