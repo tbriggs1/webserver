@@ -1,13 +1,15 @@
-$(function () {
+$(function () {   
     $.ajax({
-        url: 'https://ee12a4e9098e.ngrok.io/recommendations/recommended/1/getRecommendedBy',
+        url: 'https://b713009c3705.ngrok.io/recommendations/recommended/1/getRecommendedBy',
         type: 'GET',
-        jsonp: 'callback',
-        dataType: 'jsonp',
+        json: 'callback',
+        contentType: 'application/json',
         crossDomain: true,
         success: function (data) {
             console.log('all data: ', data);
-            albumAccordion(data);
+            console.log(data.d)
+            console.log(data.d.results)
+            albumAccordion(data.d.results);
         },
         error: function (x, y, z) {
             console.log('x', x);
@@ -16,27 +18,23 @@ $(function () {
         }
     });
     });
-    
+
+
     let albumAccordion = function (data) {
-        data.data.forEach(function (item, index) {
+        data.forEach(function (item, index) {
         console.log(item, index);
-        $('#discogAccordion').append(
-            '<div class="card">'+
-                '<div class="card-header" id="heading'+ index +'">'+
-                    '<h5 class="mb-0">'+
-                        '<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse'+ index +'"'+
-                                ' aria-expanded="false" aria-controls="collapse'+ index +'">'+
-                            item.title+
-                        '</button>'+
-                    '</h5>'+
-                '</div>'+
-    
-                '<div id="collapse'+ index +'" class="collapse" aria-labelledby="heading'+ index +'" data-parent="#discogAccordion">'+
-                    '<div class="card-body">'+
-                        'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf'+
-                    '</div>'+
-                '</div>'+
-            '</div>'
-        );
+        if (item.STUD_ID == '451288'){
+            $('.accordion-body').append(
+                '<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">' +
+                '<div class="card" style="width: 18rem;">' +
+                    '<div class="card-body">' + 
+                        '<h5 class="card-title">' + item.CPNT_TITLE + '!</h5>' +
+                        '<h6 class="card-subtitle mb-2 text-muted"> Recommended By: ' + item.RECOMMENDED_BY + '</h6>' +
+                        '<p class="card-text"> Comments: '+ item.COMMENTS + '</p>' +
+                        '<a href="' +  item.DEEPLINK_URI  + '"' + 'class="btn btn-primary">Launch</a>' +
+                '</div>' +
+                '</div>'
+            );
+        }
     });
-    };
+    }
