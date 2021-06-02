@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.blend_recommendations{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.blend_recommendations img {
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+}
+
