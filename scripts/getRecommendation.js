@@ -1,11 +1,11 @@
 $(function () {   
 
    
-    document.getElementById('osapi_name').innerHTML= jamApp.currentUser.attributes.FirstName;
+
 
     
     $.ajax({
-        url: 'https://bc5df54076e2.ngrok.io/recommendations/recommended/1/getRecommendedBy',
+        url: 'https://tomdb.ngrok.io/recommendations/recommended/1/getRecommendedBy',
         type: 'GET',
         json: 'callback',
         contentType: 'application/json',
@@ -28,7 +28,6 @@ $(function () {
     let albumAccordion = function (data) {
         data.forEach(function (item, index) {
         console.log(item, index);
-        if (item.STUD_ID == jamApp.currentUser.attributes.sf_user_id){
             $('.accordion-body').append(
                 '<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">' +
                 '<div class="card" style="width: 18rem;">' +
@@ -40,6 +39,5 @@ $(function () {
                 '</div>' +
                 '</div>'
             );
-        }
     });
     }
