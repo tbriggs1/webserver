@@ -1,0 +1,323 @@
+#TrendingTopicWidget .multiselect.dropdown-toggle.btn.btn-default{display:none;}
+
+*{
+	font-family: Arial, Helvetica, sans-serif, emoji !important;
+}
+
+.fa, .far, .fas {
+
+    font-family: "Font Awesome 5 Free" !important;
+
+}
+
+/* Check into core*/
+
+.material-icons {
+
+    font-family: 'Material Icons' !important;
+}
+
+body {background-color:transparent !important;}
+
+/* Branding, set default color vairables */
+:root {
+    --main-bg-color: #009DD6;
+    --second-bg-color: #009DD6;
+    --main-hv-color: white;
+    --navigation-buttons: rgb(158, 151, 151);
+    --navigation-buttons-hover: rgb(196, 186, 186);
+    --text-color: white;
+    /* White or black */
+    --worb: white;
+}
+
+
+/* Generic CSS */
+.btn {
+    background: var(--main-bg-color) !important;
+    border: 1px solid var(--main-bg-color) !important;
+    transition: 0.5s !important;
+	color: var(--text-color) !important;
+}
+
+.btn:hover {
+    background: var(--main-hv-color) !important; 
+    border: 1px solid var(--main-bg-color) !important;
+	color: var(--main-bg-color) !important;
+}
+
+.widget-slider .card-header .btm-sec h4 {
+    background: #000000;
+    color: white !important;
+}
+.widget-slider .card-header .btm-sec .btn {
+    background: white  !important;
+    color: #2D2D2D !important;
+}
+
+.RecentlyAccessWidget .fa-chevron-right, .RecentlyAccessWidget .fa-chevron-left {
+    color: white !important;
+}
+
+.recentlyAccessWidget .pagination li p {
+    background: var(--main-bg-color) !important;
+}
+
+.btn svg {
+    fill: white !important;
+}
+
+.btn:hover svg {
+    fill: var(--main-bg-color) !important;
+}
+
+.arrow-right, .arrow-left, .arrowRight, .arrowLeft {
+	background: var(--main-bg-color) !important;
+    color: white !important;
+	transition: 0.5s;
+    opacity: 0.7 !important;
+}
+
+switch-btn
+
+.arrow-right:hover, .arrow-left:hover, .arrowRight:hover, .arrowLeft:hover {
+	background: var(--text-color) !important;
+	color: var(--main-bg-color) !important;
+}
+
+.arrow-right-disabled, .arrow-left-disabled {
+    color:rgb(158, 151, 151) !important;
+}
+
+.arrow-right-disabled:hover, .arrow-left-disabled:hover {
+    color: rgb(158, 151, 151) !important;
+}
+
+.swiper-button-disabled, .swiper-button-disabled:hover {
+    background: rgba(0,0,0,0.2) !important;
+    opacity: 0.50 !important;
+    color: rgb(158, 151, 151) !important;
+}
+
+#UserGamficiationBadgesCarousel h6 {
+    color: var(--main-bg-color) !important;
+}
+
+#MultiRowWidget .dropdown-toggle {
+    background: white !important;
+    color: var(--main-bg-color) !important;
+}
+
+#MultiRowWidget .dropdown-toggle:hover {
+    color: var(--text-color) !important;
+    background: var(--main-bg-color) !important;
+}
+
+#MultiRowWidget .col-md-4.pb-3 .top-title {
+    background: none !important;
+    color: #2D2D2D !important;
+    font-weight: bold !important;
+    border: none !important;
+}
+
+#MultiRowWidget .col-md-4.pb-3 a {
+    background: none !important;
+    color: #2D2D2D !important;
+    border: none !important;
+}
+
+.nav-pills .menu-list .nav-item.active>a {
+    background: var(--main-bg-color) !important;
+}
+
+.format-name-h4 {
+    color: var(--second-bg-color) !important;
+}
+
+#searchBtnId {
+    background: var(--second-bg-color) !important;
+    color: white !important;
+    border: none !important;
+}
+
+#TrendingTopicWidgetSettings .col-12.text-center.footer-section {
+    justify-content: flex-start !important;
+    display:flex !important;
+    align-items: center !important;
+}
+
+#TrendingTopicWidgetSettings .footer-section>div {
+    margin-bottom: 0 !important;
+}
+
+.col-12 .text-center .footer-section {
+    color: var(--text-color) !important;
+}
+
+#PlaylistDetails button.btn.dropdown-toggle.btn-light {
+    border: none !important;
+}
+
+.modal-header {
+	background: var(--main-bg-color) !important;
+	color: white !important;
+}
+
+#UserUpcomingEvents #Event .btn.btn-outline-gray:hover {
+	color: var(--main-bg-color) !important;
+	border-color: var(--main-bg-color) !important;
+}
+
+.widget-slider .card-body .card-title a:hover{
+	color: var(--main-bg-color) !important;
+}
+
+#UserUpcomingEvents .col-8 .btn-toggle {
+	background: var(--main-bg-color) !important; 
+}
+
+/* Search Button with Icon */
+#Learning #Filter-Section .btn-search:hover {
+	background: white !important;
+	color: var(--main-bg-color) !important;
+	border-color: var(--main-bg-color) !important;
+}
+
+/* Search Icon  for Team Dashboard*/
+#Learning #Filter-Section .btn-search i {
+	color: white !important;
+}
+
+/* Search Icon  for Team Dashboard*/
+#Learning #Filter-Section .btn-search i:hover{
+	color: var(--main-bg-color) !important;
+}
+
+/* Team Dashboard Dropdown colors */
+#MultiRowWidget #Learning select:hover {
+	background: var(--main-bg-color) !important; 
+	color: white !important;
+}
+
+/* Team Dashboard Dropdown colors */
+#MultiRowWidget #Learning select {
+	color: var(--main-bg-color) !important;
+	border-color: var(--main-bg-color) !important;
+} 
+
+/* Launch Button Icon */
+#MultiRowWidget .btn svg {
+	fill: white !important;
+}
+
+/* Launch Button Icon */
+#MultiRowWidget .btn:hover svg {
+	fill: var(--main-bg-color) !important;
+}
+
+/* Show selected content */
+#MultiRowWidget #multiRowWidgetFilterForm .ButtonClicked {
+	background: var(--main-bg-color) !important;
+	color: white !important;
+}
+
+#PlaylistDetails .btn.btn-bluecolor.mr-2.mb-3 {
+    background: var(--main-bg-color) !important;
+}
+
+#careerDevelopmentPlan .btn-event {
+    background: none !important;
+    border: none !important;
+    color: white !important;
+}
+
+#careerDevelopmentPlan .btn-event:hover{
+    color: white !important;
+}
+
+#MultiRowWidget #Learning .filterSelected {
+    background: var(--main-bg-color) !important;
+    color: white !important;
+}
+
+
+
+#Learning #Filter-Section {
+	background: none transparent !important;
+}
+
+#MiniCatalogSearchWidget{
+	padding-top:0px !important;
+	overflow:hidden !important;
+}
+
+
+#RecentlyAccessWidget #dropdownMenuLink {
+    background: white !important;
+    border: none !important;
+}
+
+#RecentlyAccessWidget, #UserUpcomingEvents, #CoursesCompleted, #MiniCatalogSearchWidget, #TrendingTopicWidget, #UserRecommendationsCarousel, #UserLearningPlanCarousel, #UserPathwayList{
+    overflow-x:hidden !important;
+   }
+
+#MiniCatalogSearchWidget{
+    overflow-x:hidden;
+    height:60px !important;
+} 
+#MiniCatalogSearchWidget #Learning #Filter-Section {
+    background: none transparent !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;    
+  }
+  
+  #MiniCatalogSearchWidget #Learning #Filter-Section{
+	padding:10px !important;
+	padding-left:0px !important;
+}
+
+.popover .popover-body .details h6 {
+    color: var(--main-bg-color) !important;
+}
+
+
+.btn:focus, .arrow-right:focus, .arrow-left:focus {
+    box-shadow: none !important; 
+    border: 2px solid black !important;
+}
+
+#MiniCatalogSearchWidget .search-box-inner-1 input {
+    border: 1px solid #ced4da !important;
+}
+
+#MiniCatalogSearchWidget #Learning #Filter-Section .my-container{
+    margin-left:0px !important;
+    }
+
+.card-header.bg-white h3, .adopted-count-label, .dropdown-header.pathway-dropdown-categry-header{
+    color: var(--main-bg-color) !important;
+}
+
+#PlaylistDetails button.btn.dropdown-toggle.btn-light {
+    border: none !important;
+}
+
+#PlaylistDetails #Learning #Display-Section .btn.btn-bluecolor:hover {
+    color: var(--main-bg-color) !important;
+    background: white !important;
+    border-color: var(--main-bg-color) !important;
+}
+
+#PlaylistDetails .btn.btn-bluecolor.mr-2.mb-3 {
+    background: var(--main-bg-color) !important;
+}
+
+
+    @media not all and (min-resolution:.001dpcm) { @media {
+        .bootstrap-select .dropdown-toggle .filter-option{
+            height: auto !important;
+        }    
+        
+
+/* Company Specific CSS change */
+
